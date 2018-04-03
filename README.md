@@ -1,1 +1,1 @@
-This involves implementation of different versions of demosaicing from a RAW Nikon camera .nef file.
+This involves implementing a Bilateral Filter from scratch and comparing it with the OpenCV function.
