@@ -1,1 +1,1 @@
-Involves various experiments on Freescale DSP56858EVM kit through CodeWarrior in C and Assembly
+Project on Real-Time Image Processing relating to Histogram Equalization, Segmentation Techniques and Transformations to enhance Brighness/Contrast on real-time webcam images performed on Freescale DSP56858EVM kit through CodeWarrior in both C and Assembly
