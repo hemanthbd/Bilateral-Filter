@@ -1,1 +1,1 @@
-Project on Real-Time Image Processing relating to Histogram Equalization, Segmentation Techniques and Transformations to enhance Brighness/Contrast on real-time webcam images performed on Freescale DSP56858EVM kit through CodeWarrior in both C and Assembly
+This involves implementation of different versions of demosaicing from a RAW Nikon camera .nef file.
