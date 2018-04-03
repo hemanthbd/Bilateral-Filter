@@ -1,0 +1,84 @@
+# Link map of F_EntryPoint
+
+
+
+# .interrupt_vectors
+#>00000000          F_vector_addr (linker command file)
+  00000000 00000100 interrupt_vectors.text F_vect	(Vectors.c)
+
+# .ApplicationCode
+#>00000100          F_Pcode_start_addr (linker command file)
+  00000100 00000028 .text   F_EntryPoint	(Cpu.c)
+  00000128 00000007 .text   FCpu_Interrupt	(Cpu.c)
+  0000012F 00000056 .text   FPE_low_level_init	(Cpu.c)
+  00000185 00000006 .text   FCodec_Enable	(Codec.c)
+  0000018B 00000028 .text   FCodec_Read	(Codec.c)
+  000001B3 0000002C .text   FCodec_Write	(Codec.c)
+  000001DF 0000000E .text   Fdelay	(Codec.c)
+  000001ED 00000021 .text   FCodec_codecInit	(Codec.c)
+  0000020E 00000088 .text   FcodecConfig	(Codec.c)
+  00000296 0000000F .text   FHWEnDi	(Inhr2.c)
+  000002A5 0000000B .text   FInhr2_Enable	(Inhr2.c)
+  000002B0 00000053 .text   FInhr2_RecvBlock	(Inhr2.c)
+  00000303 0000005F .text   FInhr2_SendBlock	(Inhr2.c)
+  00000362 0000004C .text   FInhr2_InterruptRx	(Inhr2.c)
+  000003AE 00000050 .text   FInhr2_InterruptRxWE	(Inhr2.c)
+  000003FE 00000051 .text   FInhr2_InterruptTx	(Inhr2.c)
+  0000044F 00000055 .text   FInhr2_InterruptTxWE	(Inhr2.c)
+  000004A4 00000048 .text   FInhr2_Init	(Inhr2.c)
+  000004EC 00000090 .text   Fmain	(Filter1.c)
+  0000057C 0000002E startup.text Finit_56800_	(56F85x_init.asm)
+  0000057C 0000002E startup.text startup.text	(56F85x_init.asm)
+#>000005AA          F_Pcode_end_addr (linker command file)
+
+# .ApplicationData
+  00000000 00000017 .data   Fh	(Filter1.c)
+#>00000018          F_Xbss_start_addr (linker command file)
+#>00000018          _START_BSS (linker command file)
+  00000018 00000001 .bss    FSR_lock	(Cpu.c)
+  00000019 00000001 .bss    FSR_reg	(Cpu.c)
+  0000001A 00000001 .bss    FEnUser	(Codec.c)
+  0000001B 00000001 .bss    FCodecTxConfig	(Codec.c)
+  0000001C 00000001 .bss    FCodecRxConfig	(Codec.c)
+  0000001D 00000020 .bss    FOutBuffer	(Inhr2.c)
+  0000003D 00000001 .bss    FOutPtrW	(Inhr2.c)
+  0000003E 00000001 .bss    FOutPtrR	(Inhr2.c)
+  0000003F 00000001 .bss    FOutLen	(Inhr2.c)
+  00000040 00000020 .bss    FInpBuffer	(Inhr2.c)
+  00000060 00000001 .bss    FInpPtrW	(Inhr2.c)
+  00000061 00000001 .bss    FInpPtrR	(Inhr2.c)
+  00000062 00000001 .bss    FInpLen	(Inhr2.c)
+  00000063 00000001 .bss    FEnUser	(Inhr2.c)
+  00000064 00000017 .bss    Fsample_array	(Filter1.c)
+  0000007B 00000001 .bss    FLoopCount	(Filter1.c)
+  0000007C 00000020 .bss    FpSamples	(Filter1.c)
+  0000009C 00000002 .bss    Fy	(Filter1.c)
+  0000009E 00000001 .bss    Fj	(Filter1.c)
+#>000000A0          _END_BSS (linker command file)
+#>00000088          F_Xbss_length (linker command file)
+#>000000A0          _HEAP_ADDR (linker command file)
+#>00000200          _HEAP_SIZE (linker command file)
+#>000002A0          _HEAP_END (linker command file)
+#>00000400          _min_stack_size (linker command file)
+#>000002A0          _stack_addr (linker command file)
+#>000006A0          _stack_end (linker command file)
+#>000000A0          F_heap_addr (linker command file)
+#>000002A0          F_heap_end (linker command file)
+#>000002A0          F_Lstack_addr (linker command file)
+#>000002A0          F_StackAddr (linker command file)
+#>0000069F          F_StackEndAddr (linker command file)
+#>00000018          F_start_bss (linker command file)
+#>000000A0          F_end_bss (linker command file)
+#>000006A0          __DATA_END (linker command file)
+
+
+# Memory map:
+  v_addr   p_addr   size     name
+  001FFE20 001FFE20 00000000 .x_Peripherals
+  00000000 00000000 00000100 .p_Interrupts
+  00000100 00000100 000004AA .p_Code
+  00000000 00000000 000006A0 .x_Data
+  00000000 00000000 0000A000 .p_internal_RAM
+
+# Link start time: Tue Feb 27 12:35:12 2018
+# Link end time: Tue Feb 27 12:35:12 2018

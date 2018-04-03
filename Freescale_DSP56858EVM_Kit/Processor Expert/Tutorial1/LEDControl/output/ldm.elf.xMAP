@@ -1,0 +1,64 @@
+# Link map of F_EntryPoint
+
+
+
+# .interrupt_vectors
+#>00000000          F_vector_addr (linker command file)
+  00000000 00000100 interrupt_vectors.text F_vect	(Vectors.c)
+
+# .ApplicationCode
+#>00000100          F_Pcode_start_addr (linker command file)
+  00000100 0000002D .text   F_EntryPoint	(Cpu.c)
+  0000012D 00000007 .text   FCpu_Interrupt	(Cpu.c)
+  00000134 00000058 .text   FPE_low_level_init	(Cpu.c)
+  0000018C 0000000C .text   FButton_Interrupt	(Button.c)
+  00000198 00000042 .text   FSetCV	(Time_Green_Led.c)
+  000001DA 0000004E .text   FSetPV	(Time_Green_Led.c)
+  00000228 00000069 .text   FTime_Green_Led_Init	(Time_Green_Led.c)
+  00000291 00000011 .text   FTime_Green_Led_Interrupt	(Time_Green_Led.c)
+  000002A2 00000009 .text   FTime_Green_Led_OnInterrupt	(Events.c)
+  000002AB 00000009 .text   FButton_OnInterrupt	(Events.c)
+  000002B4 00000001 .text   FEInt1_OnInterrupt	(Events.c)
+  000002B5 00000003 .text   Fmain	(LEDControl.c)
+  000002B8 0000000C .text   FEInt1_Interrupt	(EInt1.c)
+  000002C4 00000042 rtlib.text rtlib.text	(Runtime 56800E lmm.lib save_reg.o     )
+  000002C4 00000000 rtlib.text INTERRUPT_SAVEALL	(Runtime 56800E lmm.lib save_reg.o     )
+  000002E7 00000000 rtlib.text INTERRUPT_RESTOREALL	(Runtime 56800E lmm.lib save_reg.o     )
+  00000306 0000002E startup.text Finit_56800_	(56F85x_init.asm)
+  00000306 0000002E startup.text startup.text	(56F85x_init.asm)
+#>00000334          F_Pcode_end_addr (linker command file)
+
+# .ApplicationData
+#>00000004          F_Xbss_start_addr (linker command file)
+#>00000004          _START_BSS (linker command file)
+  00000004 00000001 .bss    FSR_lock	(Cpu.c)
+  00000005 00000001 .bss    FShadow_GPIO_F_DR	(Cpu.c)
+  00000006 00000001 .bss    FSR_reg	(Cpu.c)
+#>00000008          _END_BSS (linker command file)
+#>00000004          F_Xbss_length (linker command file)
+#>00000008          _HEAP_ADDR (linker command file)
+#>00000100          _HEAP_SIZE (linker command file)
+#>00000108          _HEAP_END (linker command file)
+#>00000200          _min_stack_size (linker command file)
+#>00000108          _stack_addr (linker command file)
+#>00000308          _stack_end (linker command file)
+#>00000008          F_heap_addr (linker command file)
+#>00000108          F_heap_end (linker command file)
+#>00000108          F_Lstack_addr (linker command file)
+#>00000108          F_StackAddr (linker command file)
+#>00000307          F_StackEndAddr (linker command file)
+#>00000004          F_start_bss (linker command file)
+#>00000008          F_end_bss (linker command file)
+#>00000308          __DATA_END (linker command file)
+
+
+# Memory map:
+  v_addr   p_addr   size     name
+  001FFE20 001FFE20 00000000 .x_Peripherals
+  00000000 00000000 00000100 .p_Interrupts
+  00000100 00000100 00000234 .p_Code
+  00000001 00000001 00000307 .x_Data
+  00000000 00000000 0000A000 .p_internal_RAM
+
+# Link start time: Fri Feb 16 15:00:11 2018
+# Link end time: Fri Feb 16 15:00:11 2018

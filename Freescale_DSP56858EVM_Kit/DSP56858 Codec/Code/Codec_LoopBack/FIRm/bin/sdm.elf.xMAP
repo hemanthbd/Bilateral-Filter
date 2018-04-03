@@ -1,0 +1,92 @@
+# Link map of F_EntryPoint
+
+
+
+# .interrupt_vectors
+#>00000000          F_vector_addr (linker command file)
+  00000000 00000100 interrupt_vectors.text F_vect	(Vectors.c)
+
+# .ApplicationCode
+#>00000100          F_Pcode_start_addr (linker command file)
+  00000100 00000028 .text   F_EntryPoint	(Cpu.c)
+  00000128 00000007 .text   FCpu_Interrupt	(Cpu.c)
+  0000012F 00000075 .text   FPE_low_level_init	(Cpu.c)
+  000001A4 00000006 .text   FCodec_Enable	(Codec.c)
+  000001AA 00000028 .text   FCodec_Read	(Codec.c)
+  000001D2 0000002C .text   FCodec_Write	(Codec.c)
+  000001FE 0000000E .text   Fdelay	(Codec.c)
+  0000020C 00000021 .text   FCodec_codecInit	(Codec.c)
+  0000022D 00000088 .text   FcodecConfig	(Codec.c)
+  000002B5 0000000F .text   FHWEnDi	(Inhr2.c)
+  000002C4 0000000B .text   FInhr2_Enable	(Inhr2.c)
+  000002CF 00000053 .text   FInhr2_RecvBlock	(Inhr2.c)
+  00000322 0000005F .text   FInhr2_SendBlock	(Inhr2.c)
+  00000381 0000004C .text   FInhr2_InterruptRx	(Inhr2.c)
+  000003CD 00000050 .text   FInhr2_InterruptRxWE	(Inhr2.c)
+  0000041D 00000051 .text   FInhr2_InterruptTx	(Inhr2.c)
+  0000046E 00000055 .text   FInhr2_InterruptTxWE	(Inhr2.c)
+  000004C3 00000048 .text   FInhr2_Init	(Inhr2.c)
+  0000050B 00000001 .text   FIRQB_OnInterrupt	(Events.c)
+  0000050C 00000001 .text   FIRQA_OnInterrupt	(Events.c)
+  0000050D 00000008 .text   FHFilter	(FIRm.c)
+  00000515 00000099 .text   Fmain	(FIRm.c)
+  000005AE 0000000C .text   FIRQA_Interrupt	(IRQA.c)
+  000005BA 0000000C .text   FIRQB_Interrupt	(IRQB.c)
+  000005C6 00000042 rtlib.text rtlib.text	(Runtime 56800E.lib save_reg.o     )
+  000005C6 00000000 rtlib.text INTERRUPT_SAVEALL	(Runtime 56800E.lib save_reg.o     )
+  000005E9 00000000 rtlib.text INTERRUPT_RESTOREALL	(Runtime 56800E.lib save_reg.o     )
+  00000608 0000002E startup.text Finit_56800_	(56F85x_init.asm)
+  00000608 0000002E startup.text startup.text	(56F85x_init.asm)
+#>00000636          F_Pcode_end_addr (linker command file)
+
+# .ApplicationData
+  00000000 00000018 .data   Fh	(FIRm.c)
+#>00000018          F_Xbss_start_addr (linker command file)
+#>00000018          _START_BSS (linker command file)
+  00000018 00000001 .bss    FSR_lock	(Cpu.c)
+  00000019 00000001 .bss    FSR_reg	(Cpu.c)
+  0000001A 00000001 .bss    FEnUser	(Codec.c)
+  0000001B 00000001 .bss    FCodecTxConfig	(Codec.c)
+  0000001C 00000001 .bss    FCodecRxConfig	(Codec.c)
+  0000001D 00000020 .bss    FOutBuffer	(Inhr2.c)
+  0000003D 00000001 .bss    FOutPtrW	(Inhr2.c)
+  0000003E 00000001 .bss    FOutPtrR	(Inhr2.c)
+  0000003F 00000001 .bss    FOutLen	(Inhr2.c)
+  00000040 00000020 .bss    FInpBuffer	(Inhr2.c)
+  00000060 00000001 .bss    FInpPtrW	(Inhr2.c)
+  00000061 00000001 .bss    FInpPtrR	(Inhr2.c)
+  00000062 00000001 .bss    FInpLen	(Inhr2.c)
+  00000063 00000001 .bss    FEnUser	(Inhr2.c)
+  00000064 00000018 .bss    Fsample_array	(FIRm.c)
+  0000007C 00000001 .bss    FLoopCount	(FIRm.c)
+  0000007D 00000020 .bss    FpSamples	(FIRm.c)
+  0000009E 00000002 .bss    Fy	(FIRm.c)
+  000000A0 00000001 .bss    Fj	(FIRm.c)
+#>000000A2          _END_BSS (linker command file)
+#>0000008A          F_Xbss_length (linker command file)
+#>000000A4          _HEAP_ADDR (linker command file)
+#>00000200          _HEAP_SIZE (linker command file)
+#>000002A4          _HEAP_END (linker command file)
+#>00000400          _min_stack_size (linker command file)
+#>000002A4          _stack_addr (linker command file)
+#>000006A4          _stack_end (linker command file)
+#>000000A4          F_heap_addr (linker command file)
+#>000002A4          F_heap_end (linker command file)
+#>000002A4          F_Lstack_addr (linker command file)
+#>000002A4          F_StackAddr (linker command file)
+#>000006A3          F_StackEndAddr (linker command file)
+#>00000018          F_start_bss (linker command file)
+#>000000A2          F_end_bss (linker command file)
+#>000006A4          __DATA_END (linker command file)
+
+
+# Memory map:
+  v_addr   p_addr   size     name
+  001FFE20 001FFE20 00000000 .x_Peripherals
+  00000000 00000000 00000100 .p_Interrupts
+  00000100 00000100 00000536 .p_Code
+  00000000 00000000 000006A4 .x_Data
+  00000000 00000000 0000A000 .p_internal_RAM
+
+# Link start time: Wed Feb 21 21:39:24 2018
+# Link end time: Wed Feb 21 21:39:24 2018
