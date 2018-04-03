@@ -1,0 +1,591 @@
+<PE_PROJECT_SETTINGS_DOCUMENTATION>
+<PE_product_version v="version 2.98.03 for Freescale 56800/E family"/>
+<PE_core_version v="Processor Expert Version 0379"/>
+
+<CPU_Bean name="Cpu" type="56858">
+<Enabled v="Y"/>
+
+<Properties>
+<Bean_name v="Cpu"/>
+<CPU_type v="56858"/>
+<Oscillator_frequency__MHz_ v="4"/>
+<Initialization_priority v="minimal priority"/>
+<Temp_sensor v="Disabled"/>
+<Saturation_mode v="Disabled"/>
+<Program_memory_boot v="Mode 0"/>
+<Initialize_OMR_register v="no"/>
+
+<boolgroup name="Initialize shadow registers" v="no" />
+
+<enumgroup name="Initialize unused I/O pins" v="no initialization">
+
+</enumgroup>
+
+<group name="CPU interrupts">
+
+<boolgroup name="Interrupt SW0" v="Disabled" />
+
+<boolgroup name="Interrupt SW1" v="Disabled" />
+
+<boolgroup name="Interrupt SW2" v="Disabled" />
+
+<boolgroup name="Interrupt SW3" v="Disabled" />
+
+<boolgroup name="Interrupt LP" v="Disabled" />
+
+<boolgroup name="Interrupt PLL" v="Disabled" />
+
+<boolgroup name="Interrupt Illegal Instruction" v="Disabled" />
+
+<boolgroup name="Interrupt Misalign Access" v="Disabled" />
+
+<boolgroup name="Interrupt HW Stack Overflow" v="Disabled" />
+
+</group>
+
+<boolgroup name="External bus" v="Enabled">
+
+<list name="Data Bus" v="1">
+
+<group name="Data Bus">
+
+<list name="Data Bus Width" v="16">
+
+<boolgroup name="Data Bus Pin 0" v="Enabled">
+<Pin v="D0"/>
+<Pin_signal v=""/>
+
+</boolgroup>
+
+<boolgroup name="Data Bus Pin 1" v="Enabled">
+<Pin v="D1"/>
+<Pin_signal v=""/>
+
+</boolgroup>
+
+<boolgroup name="Data Bus Pin 2" v="Enabled">
+<Pin v="D2"/>
+<Pin_signal v=""/>
+
+</boolgroup>
+
+<boolgroup name="Data Bus Pin 3" v="Enabled">
+<Pin v="D3"/>
+<Pin_signal v=""/>
+
+</boolgroup>
+
+<boolgroup name="Data Bus Pin 4" v="Enabled">
+<Pin v="D4"/>
+<Pin_signal v=""/>
+
+</boolgroup>
+
+<boolgroup name="Data Bus Pin 5" v="Enabled">
+<Pin v="D5"/>
+<Pin_signal v=""/>
+
+</boolgroup>
+
+<boolgroup name="Data Bus Pin 6" v="Enabled">
+<Pin v="D6"/>
+<Pin_signal v=""/>
+
+</boolgroup>
+
+<boolgroup name="Data Bus Pin 7" v="Enabled">
+<Pin v="D7"/>
+<Pin_signal v=""/>
+
+</boolgroup>
+
+<boolgroup name="Data Bus Pin 8" v="Enabled">
+<Pin v="D8"/>
+<Pin_signal v=""/>
+
+</boolgroup>
+
+<boolgroup name="Data Bus Pin 9" v="Enabled">
+<Pin v="D9"/>
+<Pin_signal v=""/>
+
+</boolgroup>
+
+<boolgroup name="Data Bus Pin 10" v="Enabled">
+<Pin v="D10"/>
+<Pin_signal v=""/>
+
+</boolgroup>
+
+<boolgroup name="Data Bus Pin 11" v="Enabled">
+<Pin v="D11"/>
+<Pin_signal v=""/>
+
+</boolgroup>
+
+<boolgroup name="Data Bus Pin 12" v="Enabled">
+<Pin v="D12"/>
+<Pin_signal v=""/>
+
+</boolgroup>
+
+<boolgroup name="Data Bus Pin 13" v="Enabled">
+<Pin v="D13"/>
+<Pin_signal v=""/>
+
+</boolgroup>
+
+<boolgroup name="Data Bus Pin 14" v="Enabled">
+<Pin v="D14"/>
+<Pin_signal v=""/>
+
+</boolgroup>
+
+<boolgroup name="Data Bus Pin 15" v="Enabled">
+<Pin v="D15"/>
+<Pin_signal v=""/>
+
+</boolgroup>
+
+</list>
+
+</group>
+
+</list>
+
+<list name="Address Bus" v="1">
+
+<group name="Address Bus">
+
+<list name="Address Bus Width" v="21">
+
+<boolgroup name="Address Bus Pin 0" v="Enabled">
+<Pin v="A0"/>
+<Pin_signal v=""/>
+
+</boolgroup>
+
+<boolgroup name="Address Bus Pin 1" v="Enabled">
+<Pin v="A1"/>
+<Pin_signal v=""/>
+
+</boolgroup>
+
+<boolgroup name="Address Bus Pin 2" v="Enabled">
+<Pin v="A2"/>
+<Pin_signal v=""/>
+
+</boolgroup>
+
+<boolgroup name="Address Bus Pin 3" v="Enabled">
+<Pin v="A3"/>
+<Pin_signal v=""/>
+
+</boolgroup>
+
+<boolgroup name="Address Bus Pin 4" v="Enabled">
+<Pin v="A4"/>
+<Pin_signal v=""/>
+
+</boolgroup>
+
+<boolgroup name="Address Bus Pin 5" v="Enabled">
+<Pin v="A5"/>
+<Pin_signal v=""/>
+
+</boolgroup>
+
+<boolgroup name="Address Bus Pin 6" v="Enabled">
+<Pin v="A6"/>
+<Pin_signal v=""/>
+
+</boolgroup>
+
+<boolgroup name="Address Bus Pin 7" v="Enabled">
+<Pin v="A7"/>
+<Pin_signal v=""/>
+
+</boolgroup>
+
+<boolgroup name="Address Bus Pin 8" v="Enabled">
+<Pin v="A8"/>
+<Pin_signal v=""/>
+
+</boolgroup>
+
+<boolgroup name="Address Bus Pin 9" v="Enabled">
+<Pin v="A9"/>
+<Pin_signal v=""/>
+
+</boolgroup>
+
+<boolgroup name="Address Bus Pin 10" v="Enabled">
+<Pin v="A10"/>
+<Pin_signal v=""/>
+
+</boolgroup>
+
+<boolgroup name="Address Bus Pin 11" v="Enabled">
+<Pin v="A11"/>
+<Pin_signal v=""/>
+
+</boolgroup>
+
+<boolgroup name="Address Bus Pin 12" v="Enabled">
+<Pin v="A12"/>
+<Pin_signal v=""/>
+
+</boolgroup>
+
+<boolgroup name="Address Bus Pin 13" v="Enabled">
+<Pin v="A13"/>
+<Pin_signal v=""/>
+
+</boolgroup>
+
+<boolgroup name="Address Bus Pin 14" v="Enabled">
+<Pin v="A14"/>
+<Pin_signal v=""/>
+
+</boolgroup>
+
+<boolgroup name="Address Bus Pin 15" v="Enabled">
+<Pin v="A15"/>
+<Pin_signal v=""/>
+
+</boolgroup>
+
+<boolgroup name="Address Bus Pin 16" v="Disabled" />
+
+<boolgroup name="Address Bus Pin 17" v="Disabled" />
+
+<boolgroup name="Address Bus Pin 18" v="Disabled" />
+
+<boolgroup name="Address Bus Pin 19" v="Disabled" />
+
+<boolgroup name="Address Bus Pin 20" v="Disabled" />
+
+</list>
+
+</group>
+
+</list>
+
+<group name="Chip selects">
+
+<boolgroup name="CS0" v="Disabled" />
+
+<boolgroup name="CS1" v="Disabled" />
+
+<boolgroup name="CS2" v="Disabled" />
+
+<boolgroup name="CS3" v="Disabled" />
+
+</group>
+<Base_read_wait_states v="28"/>
+<Base_write_wait_states v="18"/>
+<Base_minimal_delay_after_read v="0"/>
+<Drive v="1"/>
+
+<list name="External memory" v="0">
+
+</list>
+
+</boolgroup>
+
+<group name="Enabled speed modes">
+
+<boolgroup name="High speed mode" v="Enabled">
+<System_clock__IP_Bus_ v="60"/>
+
+<boolgroup name="PLL clock" v="Enabled">
+<PLL_clock_frequency v="120"/>
+
+</boolgroup>
+
+</boolgroup>
+
+<boolgroup name="Low speed mode" v="Disabled" />
+
+<boolgroup name="Slow speed mode" v="Disabled" />
+
+</group>
+</Properties>
+
+<Methods>
+<SetHighSpeed v="don&apos;t generate code"/>
+<SetLowSpeed v="don&apos;t generate code"/>
+<SetSlowSpeed v="don&apos;t generate code"/>
+<GetSpeedMode v="don&apos;t generate code"/>
+<EnableInt v="generate code"/>
+<DisableInt v="generate code"/>
+<GetResetSource v="don&apos;t generate code"/>
+<SetWaitMode v="generate code"/>
+<SetStopMode v="generate code"/>
+<SetDataMode v="generate code"/>
+<GetBusFreqHz v="don&apos;t generate code"/>
+<InitShadowRegs v="don&apos;t generate code"/>
+<Delay100US v="don&apos;t generate code"/>
+</Methods>
+
+<Events>
+<Event_module_name v="Events"/>
+
+<event name="OnReset" v="don&apos;t generate code" />
+
+<event name="OnSwINT0" v="don&apos;t generate code" />
+
+<event name="OnSwINT1" v="don&apos;t generate code" />
+
+<event name="OnSwINT2" v="don&apos;t generate code" />
+
+<event name="OnSwINT3" v="don&apos;t generate code" />
+
+<event name="OnSwINTLP" v="don&apos;t generate code" />
+
+<event name="OnPLLError" v="don&apos;t generate code" />
+
+<event name="OnIllegalOpcode" v="don&apos;t generate code" />
+
+<event name="OnMisalignData" v="don&apos;t generate code" />
+
+<event name="OnHWStackError" v="don&apos;t generate code" />
+</Events>
+<Compiler v="CodeWarrior DSP C Compiler"/>
+
+<CompilerProperties>
+<Compiler v="CodeWarrior DSP C Compiler"/>
+<PESL_support v="no"/>
+<Unhandled_interrupts v="One handler for all"/>
+
+<group name="User initialization">
+<User_data_declarations>
+</User_data_declarations>
+<User_code_before_PE_initialization>
+</User_code_before_PE_initialization>
+<User_code_after_PE_initialization>
+</User_code_after_PE_initialization>
+
+</group>
+
+<boolgroup name="Generate linker file" v="yes">
+
+<boolgroup name="Serial bootloader support" v="no" />
+<Stack_size v="512"/>
+<Heap_size v="256"/>
+
+<list name="ROM/RAM Areas" v="3">
+
+<group name="MemoryArea0">
+
+<boolgroup name="ROM/RAM Area" v="Enabled">
+<Name v=".p_Interrupts"/>
+<Address v="0"/>
+<Size v="256"/>
+<Qualifier v="RWX"/>
+
+</boolgroup>
+
+</group>
+
+<group name="MemoryArea1">
+
+<boolgroup name="ROM/RAM Area" v="Enabled">
+<Name v=".p_Code"/>
+<Address v="256"/>
+<Size v="40704"/>
+<Qualifier v="RWX"/>
+
+</boolgroup>
+
+</group>
+
+<group name="MemoryArea2">
+
+<boolgroup name="ROM/RAM Area" v="Enabled">
+<Name v=".x_Data"/>
+<Address v="1"/>
+<Size v="24575"/>
+<Qualifier v="RW"/>
+
+</boolgroup>
+
+</group>
+
+</list>
+
+</boolgroup>
+
+<list name="System paths " v="0">
+
+</list>
+
+<list name="User paths " v="0">
+
+</list>
+
+<list name="Libraries" v="0">
+
+</list>
+
+<list name="User directories" v="0">
+
+</list>
+</CompilerProperties>
+</CPU_Bean>
+
+<Bean name="serial" type="AsynchroSerial">
+<Enabled v="Y"/>
+
+<Properties>
+<Bean_name v="serial"/>
+<Channel v="SCI0"/>
+
+<boolgroup name="Interrupt service/event" v="Enabled">
+<Interrupt_RxD v="INT_SCI0_RxFull"/>
+<Interrupt_RxD_priority v="medium priority"/>
+<Interrupt_RxD_preserve_registers v="yes"/>
+<Interrupt_TxD v="INT_SCI0_TxEmpty"/>
+<Interrupt_TxD_priority v="medium priority"/>
+<Interrupt_TxD_preserve_registers v="yes"/>
+<Interrupt_Error v="INT_SCI0_RxError"/>
+<Interrupt_Error_priority v="medium priority"/>
+<Interrupt_Error_preserve_registers v="yes"/>
+<Interrupt_Idle v="INT_SCI0_TxIdle"/>
+<Interrupt_Idle_priority v="medium priority"/>
+<Interrupt_Idle_preserve_registers v="yes"/>
+<Input_buffer_size v="128"/>
+<Output_buffer_size v="1024"/>
+
+<group name="Handshake">
+
+<boolgroup name="CTS" v="Disabled" />
+
+<boolgroup name="RTS" v="Disabled" />
+
+</group>
+
+</boolgroup>
+
+<group name="Settings">
+<Parity v="none"/>
+<Width v="8 bits"/>
+<Stop_bit v="1"/>
+
+<enumgroup name="SCI output mode" v="Normal">
+
+</enumgroup>
+
+<boolgroup name="Receiver" v="Enabled">
+<RxD v="GPIOE0_RXD0"/>
+<RxD_pin_signal v=""/>
+
+<boolgroup name="DMA support" v="Disabled" />
+
+</boolgroup>
+
+<boolgroup name="Transmitter" v="Enabled">
+<TxD v="GPIOE1_TXD0"/>
+<TxD_pin_signal v=""/>
+
+<boolgroup name="DMA support" v="Disabled" />
+
+</boolgroup>
+<Baud_rate v="57600 baud"/>
+<Break_signal v="Disabled"/>
+<Wakeup_condition v="Idle line wakeup"/>
+<Transmitter_output v="Not inverted"/>
+<Stop_in_wait_mode v="no"/>
+
+</group>
+
+<group name="Initialization">
+<Enabled_in_init__code v="yes"/>
+<Events_enabled_in_init_ v="yes"/>
+
+</group>
+
+<group name="CPU clock/speed selection">
+<High_speed_mode v="This bean enabled"/>
+<Low_speed_mode v="This bean disabled"/>
+<Slow_speed_mode v="This bean disabled"/>
+
+</group>
+</Properties>
+
+<Methods>
+<Enable v="don&apos;t generate code"/>
+<Disable v="don&apos;t generate code"/>
+<EnableEvent v="don&apos;t generate code"/>
+<DisableEvent v="don&apos;t generate code"/>
+<RecvChar v="generate code"/>
+<SendChar v="generate code"/>
+<RecvBlock v="generate code"/>
+<SendBlock v="generate code"/>
+<ClearRxBuf v="generate code"/>
+<ClearTxBuf v="generate code"/>
+<CharsInRxBuf v="don&apos;t generate code"/>
+<GetCharsInRxBuf v="generate code"/>
+<CharsInTxBuf v="don&apos;t generate code"/>
+<GetCharsInTxBuf v="generate code"/>
+<SetBaudRateMode v="don&apos;t generate code"/>
+<GetError v="don&apos;t generate code"/>
+<GetBreak v="don&apos;t generate code"/>
+<SetBreak v="don&apos;t generate code"/>
+<TurnTxOn v="don&apos;t generate code"/>
+<TurnTxOff v="don&apos;t generate code"/>
+<TurnRxOn v="don&apos;t generate code"/>
+<TurnRxOff v="don&apos;t generate code"/>
+<SetIdle v="don&apos;t generate code"/>
+<LoopMode v="don&apos;t generate code"/>
+<ConnectPin v="don&apos;t generate code"/>
+<GetRxIdle v="don&apos;t generate code"/>
+<GetTxComplete v="don&apos;t generate code"/>
+</Methods>
+
+<Events>
+<Event_module_name v="Events"/>
+
+<event name="BeforeNewSpeed" v="don&apos;t generate code" />
+
+<event name="AfterNewSpeed" v="don&apos;t generate code" />
+
+<event name="OnError" v="generate code">
+<Event_procedure_name v="serial_OnError"/>
+<Priority v="same as interrupt"/>
+
+</event>
+
+<event name="OnRxChar" v="generate code">
+<Event_procedure_name v="serial_OnRxChar"/>
+<Priority v="same as interrupt"/>
+
+</event>
+
+<event name="OnRxCharExt" v="don&apos;t generate code" />
+
+<event name="OnTxChar" v="generate code">
+<Event_procedure_name v="serial_OnTxChar"/>
+<Priority v="same as interrupt"/>
+
+</event>
+
+<event name="OnFullRxBuf" v="generate code">
+<Event_procedure_name v="serial_OnFullRxBuf"/>
+<Priority v="same as interrupt"/>
+
+</event>
+
+<event name="OnFreeTxBuf" v="generate code">
+<Event_procedure_name v="serial_OnFreeTxBuf"/>
+<Priority v="same as interrupt"/>
+
+</event>
+
+<event name="OnBreak" v="don&apos;t generate code" />
+
+<event name="OnTxComplete" v="don&apos;t generate code" />
+</Events>
+</Bean>
+
+</PE_PROJECT_SETTINGS_DOCUMENTATION>
